@@ -11,4 +11,10 @@ class Team < ApplicationRecord
         full_data= JSON.parse(respons)
         full_data
     end
+
+    def self.create_all_teams
+        self.all_teams.each do |ele| 
+            self.create(team_data: ele)
+        end
+    end
 end
