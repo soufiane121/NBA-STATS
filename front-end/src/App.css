@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,27 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
+
+
+  .card-main {
+  display: inline-grid;
+  width: 20%;
+  grid-template-columns: 90% 90% 90% 90% 90%;
+  grid-template-rows: 90% 90% 90% 90% 90%;
+  }
+  .card-box:hover h4{
+    background-color: #effffb;
+    width: auto;
+    text-align: center;
+  } 
+
+
+  .img-card {
+    width: 70%;
+    margin-block-end: 20%;
+    height: auto;
+    z-index: -1;
+  } 
+  
+ 

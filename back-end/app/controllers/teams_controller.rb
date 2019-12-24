@@ -13,7 +13,7 @@ class TeamsController < ApplicationController
         #       render json: @teams
         # end
         teams = Team.all_teams
-        render json: teams
+        render json: teams, except: [:OpponentStat]
     end
 
     
