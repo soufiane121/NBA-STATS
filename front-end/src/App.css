@@ -57,5 +57,23 @@
     height: auto;
     z-index: -1;
   } 
-  
+  #full-page {
+   background: red;
+  }
+  .nav-bar {
+    border: green solid 1rf;
+    margin: 1%;
+    height: 100px;
+    width: auto;
+    /* background-color: transparent rgb(17, 14, 14) ; */
+    z-index: 1;
+  }
+
+  .mixed-chart {
+    border: rgb(83, 45, 14) solid 1px;
+    border-radius: 3%;
+    width: 58%;
+    position: absolute;
+    margin-left: 1%;
+  }
  
