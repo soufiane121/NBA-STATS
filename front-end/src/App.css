@@ -58,22 +58,26 @@
     z-index: -1;
   } 
   #full-page {
-   background: red;
+    /* display: inline-grid ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%; */
+    background: #010625;
   }
-  .nav-bar {
+  /* .nav-bar {
     border: green solid 1rf;
     margin: 1%;
     height: 100px;
     width: auto;
-    /* background-color: transparent rgb(17, 14, 14) ; */
-    z-index: 1;
-  }
+    
+  } */
 
-  .mixed-chart {
-    border: rgb(83, 45, 14) solid 1px;
-    border-radius: 3%;
+  /* .row .mixed-chart {
+   
+    color: blanchedalmond;
+    font-weight: 600;
     width: 58%;
-    position: absolute;
+    position: relative;
     margin-left: 1%;
-  }
+    font-weight: 500;
+  } */
  
