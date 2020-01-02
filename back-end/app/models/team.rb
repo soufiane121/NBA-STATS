@@ -6,7 +6,7 @@ class Team < ApplicationRecord
 
 
     def self.all_teams
-        url= "https://api.sportsdata.io/v3/nba/scores/json/TeamSeasonStats/2020?key=ede810c13cea487ebb74eb91a43793a2"
+        url= "https://api.sportsdata.io/v3/nba/scores/json/TeamSeasonStats/2020?key=1f7f38a436004cd6a266035c5ade330e"
         respons = RestClient.get(url)
         full_data= JSON.parse(respons)
         full_data

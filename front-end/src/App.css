@@ -1,42 +1,3 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
 
   .card-main {
   display: inline-grid;
@@ -44,6 +5,14 @@
   grid-template-columns: 90% 90% 90% 90% 90%;
   grid-template-rows: 90% 90% 90% 90% 90%;
   }
+
+  /* .card-main {
+    display: grid;
+    align-items: center;
+    width: 20%;
+    grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  } */
   .card-box:hover h4{
     background-color: #effffb;
     width: auto;
@@ -57,5 +26,162 @@
     height: auto;
     z-index: -1;
   } 
+  #full-page {
+    margin-left: 10% 5%;
+    width: auto;
+    /* background: rgb(32,95,134); */
+    /* z-index: 1; */
+    /* display: grid; */
+    /* grid-template-columns: 30% 40% ;
+    grid-template-rows: 50% 50%; */
+    display: inline-block;
+    /* background-color: rgb(32,95,134);*/
+    /* background-color: #35477d; */
+    /* height: 100%; */
+  }
   
+  .row {
+    border: rgb(30, 53, 90) solid 1px;
+    /* background-color: rgb(57, 83, 128); */
+    border-radius: 3%;
+    float: left;
+    /* border: orange solid 2px; */
+    padding-left: 10px;
+    margin-left: 10px;
+    z-index: 0;
+  } 
+ .row2 {
+   float: right;
+   border: rgb(30, 53, 90) solid 1px;
+   /* background-color: rgb(30,53,92); */
+   border-radius: 6%;
+   margin-right: 8px;
+   padding: 20px;
+ } 
+
+ .row3 {
+   float: center;
+   margin-top: 23%;
+   /* position: relative; */
+   float: right;
+   border: rgb(30, 53, 90) solid 1px;
+   /* background-color: rgb(30,53,92); */
+   border-radius: 6%;
+ }
+
+ .nav-bar {
+   width: 100%;
+   height: 70px;
+   background-color: #c0ffb3;
+   position: relative;
+   text-align: right;
+   margin-bottom: 30px;
+ }
+
+ .log-out {
+   text-align: right;
+   margin-right: 10px;
+   color: #7fa998;
+   font-size: 20px;
+   background-color: #7fa998;
+ }
+
+ .log-out button {
+   /* background-color: red; */
+   /* border-radius: 10%; */
+   /* color: black; */
+   font-size: 25px;
+ }
  
+/************ form css *************/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
