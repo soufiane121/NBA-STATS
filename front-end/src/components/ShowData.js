@@ -4,7 +4,7 @@ import Chart from 'react-apexcharts'
 class ShowData extends React.Component {
 
     state={
-        obj:this.props.singleTeam,
+        obj: this.props.singleTeam,
         options:{
           chart:{color: 'f3f3f3'},
           labels: ["Wins", "Losses"],
@@ -97,10 +97,10 @@ class ShowData extends React.Component {
        
    
        render(){
-         console.log(this.props.routerProps)
+         console.log("hello", this.props.singleTeam)
            return(
              <div id="full-page">
-               <div className="nav-bar"> Test</div>
+               <div className="nav-bar"></div>
              <div className="row">
                <div className="mixed-chart">
                  <Chart

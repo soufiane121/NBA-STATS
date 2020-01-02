@@ -9,7 +9,7 @@ import PortFolioTeam from './PortFolioTeam'
  class PortFolio extends React.Component {
 
   render(){
-    return this.props.portfolioTeams ? this.props.portfolioTeams.map(team=> <PortFolioTeam teamm={team} key={team.id} />) : ""
+    return this.props.portfolioTeams ? this.props.portfolioTeams.map(team=> <PortFolioTeam teamm={team} key={team.id} handleTeamCard={this.props.handleTeamCard}/>) : ""
   }
 
  }

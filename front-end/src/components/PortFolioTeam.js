@@ -13,7 +13,7 @@ class PortFolioTeam extends React.Component {
             <Card.Img variant="top" src={images(`./${this.props.teamm.Team}.jpg`)} alt={this.props.teamm.Name}/>
             <Card.Body>
             <Card.Title>{this.props.teamm.Name}</Card.Title>
-              <Button variant="primary">Check Stats</Button>
+              <Button variant="primary" onClick={()=> this.props.handleTeamCard(this.props.teamm)}>Check Stats</Button>
             </Card.Body>
           </Card>
         
