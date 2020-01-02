@@ -5,11 +5,26 @@
  import Card from 'react-bootstrap/Card'
  import Button from 'react-bootstrap/Button'
 import PortFolioTeam from './PortFolioTeam'
+import Dropdown from 'react-bootstrap/Dropdown'
 
  class PortFolio extends React.Component {
 
   render(){
-    return this.props.portfolioTeams ? this.props.portfolioTeams.map(team=> <PortFolioTeam teamm={team} key={team.id} handleTeamCard={this.props.handleTeamCard}/>) : ""
+    return (
+      <>
+      <div className="log-out" > 
+      <Dropdown>
+      <Dropdown.Toggle variant="success" id="dropdown-basic">
+     Log Out
+  </Dropdown.Toggle>
+
+  <Dropdown.Menu style={{backgroundColor:"#f1f1b0"}}>
+    <Dropdown.Item onClick={this.props.handleLogOut}>Bye</Dropdown.Item>
+  </Dropdown.Menu>
+</Dropdown></div>
+      {this.props.portfolioTeams ? this.props.portfolioTeams.map(team=> <PortFolioTeam teamm={team} key={team.id} handleTeamCard={this.props.handleTeamCard}/>) : ""}
+      </>
+      )
   }
 
  }

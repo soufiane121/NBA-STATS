@@ -64,6 +64,14 @@ class App extends Component {
         )
       }
 
+  
+  handleLogOut=() => {
+    console.log("Heelo");
+    localStorage.clear()
+    this.setState({portfolioTeams: []})
+    this.props.history.push('/')
+  }
+
   render() {
     
     return (
@@ -71,8 +79,8 @@ class App extends Component {
         {
           <Switch>
             <Route exact path="/teamlist" render={() => <TeamsList teamsData={this.state.teamsData} handleTeamCardClick={this.handleTeamCardClick}/>}/>
-            <Route path="/portfolio" render={()=> <PortFolio singleTeam={this.state.singleTeam} portfolioTeams={this.state.portfolioTeams} handleTeamCard={this.handleTeamCard}/>} />
-            <Route exact path="/showdata" render={() => <ShowData singleTeam={this.state.singleTeam}/>}/>
+            <Route path="/portfolio" render={()=> <PortFolio handleLogOut={this.handleLogOut} portfolioTeams={this.state.portfolioTeams} handleTeamCard={this.handleTeamCard}/>} />
+            <Route exact path="/showdata" render={() => <ShowData singleTeam={this.state.singleTeam} handleLogOut={this.handleLogOut}/>}/>
             <Route path="/" render={()=> <Login handleCreateUser={this.handleCreateUser} errorMessag={this.state.errorMessag}/>}/>
           </Switch>
         }
