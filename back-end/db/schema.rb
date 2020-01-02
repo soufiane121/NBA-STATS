@@ -16,14 +16,14 @@ ActiveRecord::Schema.define(version: 2019_12_20_170719) do
   enable_extension "plpgsql"
 
   create_table "joins", force: :cascade do |t|
-    t.string "user_id"
-    t.string "team_id"
+    t.integer "user_id"
+    t.integer "team_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "teams", force: :cascade do |t|
-    t.string "team_data"
+    t.jsonb "team_data", default: "{}"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
