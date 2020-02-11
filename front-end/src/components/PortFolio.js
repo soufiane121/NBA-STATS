@@ -17,19 +17,18 @@ import Dropdown from 'react-bootstrap/Dropdown'
       <Dropdown.Toggle variant="success" id="dropdown-basic">
      Log Out
   </Dropdown.Toggle>
-
   <Dropdown.Menu style={{backgroundColor:"#f1f1b0"}}>
     <Dropdown.Item onClick={this.props.handleLogOut}>Bye</Dropdown.Item>
   </Dropdown.Menu>
-</Dropdown></div>
+  </Dropdown></div>
       {this.props.portfolioTeams ? this.props.portfolioTeams.map(team=> <PortFolioTeam teamm={team} key={team.id} handleTeamCard={this.props.handleTeamCard}/>) : ""}
       </>
       )
   }
-
  }
 
 
+ export default PortFolio
 
 
 
@@ -177,5 +176,3 @@ import Dropdown from 'react-bootstrap/Dropdown'
   //       )
   //   }
  
-
- export default PortFolio

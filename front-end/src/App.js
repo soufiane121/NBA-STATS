@@ -78,8 +78,8 @@ class App extends Component {
       <div className="App">
         {
           <Switch>
-            <Route exact path="/teamlist" render={() => <TeamsList teamsData={this.state.teamsData} handleTeamCardClick={this.handleTeamCardClick}/>}/>
             <Route path="/portfolio" render={()=> <PortFolio handleLogOut={this.handleLogOut} portfolioTeams={this.state.portfolioTeams} handleTeamCard={this.handleTeamCard}/>} />
+            <Route exact path="/teamlist" render={() => <TeamsList teamsData={this.state.teamsData} handleTeamCardClick={this.handleTeamCardClick}/>}/>
             <Route exact path="/showdata" render={() => <ShowData singleTeam={this.state.singleTeam} handleLogOut={this.handleLogOut}/>}/>
             <Route path="/" render={()=> <Login handleCreateUser={this.handleCreateUser} errorMessag={this.state.errorMessag}/>}/>
           </Switch>
